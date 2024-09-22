@@ -15,7 +15,7 @@ function App() {
           +
         </button>
         <h1>Expensive Calculation</h1>
-        <p id="calc">1000000000</p>
+        <p id="calc">{1000000000 + count}</p>
       </div>
       <ReactMemo list={list} setList={setList} />
     </div>
