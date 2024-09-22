@@ -16,7 +16,7 @@ const ReactMemo = ({ list, setList }) => {
       <button id="skill-btn" onClick={() => setList([...list, task])}>
         Add Skill
       </button>
-      <ul>
+      <ul id="item-jumbotron">
         {list.map((k, i) => (
           <li key={i}>{k}</li>
         ))}
