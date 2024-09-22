@@ -13,7 +13,9 @@ function UseMemo() {
         <h1>React.useMemo</h1>
         <h1>My todos</h1>
         {todo.map((k, i) => (
-          <p key={i}>{k}</p>
+          <p key={i} id={`todo-${i}`}>
+            {k}
+          </p>
         ))}
         <button id="add-todo-btn" onClick={clickFn}>
           Add Todo

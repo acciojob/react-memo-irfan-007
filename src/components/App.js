@@ -10,7 +10,7 @@ function App() {
     <div id="main">
       <UseMemo />
       <div>
-        Count:{count}{" "}
+        Count:{count}
         <button id="incr-cnt" onClick={() => setCount(count + 1)}>
           +
         </button>

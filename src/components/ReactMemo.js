@@ -13,7 +13,9 @@ const ReactMemo = ({ list, setList }) => {
         minLength={6}
         onChange={(e) => setTask(e.target.value)}
       />
-      <button onClick={() => setList([...list, task])}>Add Skill</button>
+      <button id="skill-btn" onClick={() => setList([...list, task])}>
+        Add Skill
+      </button>
       <ul>
         {list.map((k, i) => (
           <li key={i}>{k}</li>
