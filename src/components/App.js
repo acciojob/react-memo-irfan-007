@@ -11,7 +11,9 @@ function App() {
       <UseMemo />
       <div>
         Count: <span id="incr-cnt">{count}</span>
-        <button onClick={() => setCount(count + 1)}>+</button>
+        <button id="incr-btn" onClick={() => setCount(count + 1)}>
+          +
+        </button>
         <h1>Expensive Calculation</h1>
         <p id="calc">1000000000</p>
       </div>
