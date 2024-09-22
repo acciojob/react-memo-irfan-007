@@ -10,10 +10,10 @@ function App() {
     <div id="main">
       <UseMemo />
       <div>
-        Count:
-        <button id="calc" onClick={() => setCount(count + 1)}>
-          +<span id="incr-cnt">{count}</span>
-        </button>
+        Count: <span id="incr-cnt">{count}</span>
+        <button onClick={() => setCount(count + 1)}>+</button>
+        <h1>Expensive Calculation</h1>
+        <p id="calc">1000000000</p>
       </div>
       <ReactMemo list={list} setList={setList} />
     </div>
