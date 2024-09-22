@@ -8,6 +8,7 @@ const ReactMemo = ({ list, setList }) => {
     <div>
       <h1>React.memo</h1>
       <input
+        id="skill-input"
         type="text"
         minLength={6}
         onChange={(e) => setTask(e.target.value)}

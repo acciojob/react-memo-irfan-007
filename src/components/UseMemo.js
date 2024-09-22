@@ -15,7 +15,9 @@ function UseMemo() {
         {todo.map((k, i) => (
           <p key={i}>{k}</p>
         ))}
-        <button onClick={clickFn}>Add Todo</button>
+        <button id="add-todo-btn" onClick={clickFn}>
+          Add Todo
+        </button>
       </div>
     );
   }, [todo]);

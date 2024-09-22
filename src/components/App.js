@@ -7,10 +7,13 @@ function App() {
   console.log("counter");
 
   return (
-    <div>
+    <div id="main">
       <UseMemo />
       <div>
-        Count:{count} <button onClick={() => setCount(count + 1)}>+</button>
+        Count:{count}{" "}
+        <button id="incr-cnt" onClick={() => setCount(count + 1)}>
+          +
+        </button>
       </div>
       <ReactMemo list={list} setList={setList} />
     </div>
